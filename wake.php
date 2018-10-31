@@ -1,5 +1,5 @@
 <?php
-namespace PHPGangsta;
+namespace hwHome;
 class WakeOnLAN
 {
     public static function wakeUp($macAddressHexadecimal, $broadcastAddress)
