@@ -8,6 +8,13 @@ switch($_POST['c']){
     break;
     default:
     echo $_POST['c'].' not found.';
+    ?>
+    <script>
+    window.setTimeout(function(){
+        window.location.href = '/';
+    }, 2000);
+    </script>
+    <?php
     break;
 }
 ?>
