@@ -1,5 +1,5 @@
 <?php
-echo '# hw-home #';
+echo '<strong># hw-home #</strong>';
 ?>
 <br>
 <br>
