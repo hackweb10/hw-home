@@ -16,6 +16,7 @@ class WakeOnLAN
         }
         fputs($fp, $magicPacket);
         fclose($fp);
+        echo 'woke up';
     }
 }
 ?>
