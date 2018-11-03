@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__.'/wakeService.php';
+require_once __DIR__.'/hwHome/wakeService.php';
 //echo __DIR__.'/wake.php';
 if(!isset($_POST['c'])) die('"c" not found.');
 switch($_POST['c']){
