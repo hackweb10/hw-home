@@ -6,7 +6,7 @@ switch($_POST['c']){
     case '001':
     \hwHome\WakeOnLAN::wakeUp('90:e6:ba:ee:d1:91', '192.168.1.255');
     break;
-    case '004':
+    case '005':
     \hwHome\WakeOnLAN::wakeUp('d0:17:c2:15:59:53', '192.168.1.255');
     break;
     default:
