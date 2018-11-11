@@ -46,7 +46,6 @@ class WakeOnLAN
                 echo "setsockopt() failed, error: " . strerror($opt_ret) . "\n";
             }
             $e = socket_sendto($s, $msg, strlen($msg), 0, $addr, 2050);
-            echo $e;
             socket_close($s);
             echo " Magic Packet sent (".$e.") to ".$addr.", MAC=".$mac;
         }
