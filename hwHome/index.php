@@ -73,7 +73,7 @@ label{
     <br>    
     <form method="post" action="<?php echo htmlspecialchars('/hwHome/');?>">
         <label for="name">Name</label>        
-        <input type="text" id="name" name="c" value="">        
+        <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="text" id="name" name="c" value="">        
         <input type="submit" name="submit" value="Send"> 
     </form>
     <br>
