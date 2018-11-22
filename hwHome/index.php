@@ -16,6 +16,7 @@
         <br><br>
         <input type="submit" name="submit" value="send"> 
     </form>
+    <br>
     <?php
     require_once('./wake.php');
     ?>
