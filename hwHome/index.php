@@ -16,6 +16,7 @@ input[type="text"] {
     -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     border: none;
+    border: 0.5px solid #444;
     margin: 15px auto;
     padding: 10px 8px;
     color: rgba(0,0,0,.87);
