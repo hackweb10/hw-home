@@ -7,6 +7,7 @@
 input[type="text"] {
     width: 100%;
     background-color: transparent;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     border: none;
     margin: 0;
     padding: 0;
@@ -15,8 +16,7 @@ input[type="text"] {
     outline: none;
     display: flex;
     flex: 100%;
-    -webkit-tap-highlight-color: transparent;
-    margin-top: -37px;
+    -webkit-tap-highlight-color: transparent;    
 }
 .SDkEP {
     flex: 1;
