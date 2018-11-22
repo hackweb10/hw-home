@@ -65,12 +65,12 @@ h1{
 
 <h1><strong><span class="primary">h</span><span class="secondary">w</span><span class="">Home</span></strong></h1>
 <p>
-    Controller
+    <strong>The Controller</strong>
     <br>    
     <form method="post" action="<?php echo htmlspecialchars('/hwHome/');?>">
         <label for="name">Name</label>        
         <input type="text" id="name" name="c" value="">        
-        <input type="submit" name="submit" value="send"> 
+        <input type="submit" name="submit" value="Send"> 
     </form>
     <br>
     <?php
