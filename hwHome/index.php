@@ -11,9 +11,9 @@
     <br>    
     <form method="post" action="<?php echo htmlspecialchars('/hwHome/');?>">
         <label for="name">Name</label>
-        <br><br>
-        <input type="text" id="name" name="c" value="">
         <br>
+        <input type="text" id="name" name="c" value="">
+        <br><br>
         <input type="submit" name="submit" value="send"> 
     </form>
     <?php
