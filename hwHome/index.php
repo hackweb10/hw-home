@@ -44,11 +44,17 @@ input[type="submit"]{
     text-align: center;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
 }
+h1{
+    font-family: "Verdana";
+}
+.primary{
+    color: #4885ed;
+}
 </style>
 </head>
 <body>
 
-<h1><strong>hwHome</strong></h1>
+<h1><strong><span class="primary">h</span>wHome</strong></h1>
 <p>
     Turner on.
     <br>    
