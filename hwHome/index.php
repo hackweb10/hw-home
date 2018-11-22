@@ -8,14 +8,13 @@
 <h1><strong># hwHome #</strong></h1>
 <p>
     Turner on.
-    <br>
-    <br>
+    <br>    
     <form method="post" action="<?php echo htmlspecialchars('/hwHome/');?>">
-    <label for="name">Name</label>
-    <br>
-    <input type="text" id="name" name="c" value="">
-    <br>
-    <input type="submit" name="submit" value="send"> 
+        <label for="name">Name</label>
+        <br><br>
+        <input type="text" id="name" name="c" value="">
+        <br>
+        <input type="submit" name="submit" value="send"> 
     </form>
     <?php
     require_once('./wake.php');
