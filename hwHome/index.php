@@ -21,8 +21,7 @@ input[type="text"] {
     outline: none;
     display: flex;
     flex: 100%;
-    font-size: 14px;
-    -webkit-tap-highlight-color: transparent;   
+    font-size: 14px;    
     max-width: 484px; 
 }
 input[type="submit"]{
