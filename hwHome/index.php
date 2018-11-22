@@ -19,6 +19,7 @@ input[type="text"] {
     border: none;
     border: 0.5px solid rgba(0,0,0,0.16);
     margin: 15px auto;
+    margin-bottom: 5px;
     padding: 10px 8px;
     color: rgba(0,0,0,.87);
     word-wrap: break-word;
@@ -58,6 +59,9 @@ h1{
 }
 .secondary{
     color: #212529;
+}
+label{
+    font-size: 12px;
 }
 </style>
 </head>
