@@ -46,6 +46,7 @@ input[type="submit"]{
 }
 h1{
     font-family: "Verdana";
+    color: #212529;
 }
 .primary{
     color: #4885ed;
