@@ -14,7 +14,7 @@
     <label for="name">Name</label>
     <br>
     <input type="text" id="name" name="c" value="">
-    <br><br>
+    <br>
     <input type="submit" name="submit" value="send"> 
     </form>
     <?php
