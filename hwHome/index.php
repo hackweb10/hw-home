@@ -54,7 +54,7 @@ h1{
 </head>
 <body>
 
-<h1><strong><span class="primary">h</span>wHome</strong></h1>
+<h1><strong><span class="primary">h</span>w<span class="primary">Home</span></strong></h1>
 <p>
     Turner on.
     <br>    
