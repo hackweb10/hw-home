@@ -26,6 +26,6 @@ if(isset($_POST['c'])):
 <script>
 window.setTimeout(function(){
     window.location.href = '/';
-}, 1000);
+}, 2000);
 </script>
 <?php endif; ?>
