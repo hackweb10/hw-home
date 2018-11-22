@@ -6,7 +6,7 @@
 <style>
 body{
     text-align: center;
-    color: #555;
+    color: #444;
     font-size: 16px;
 }
 input[type="text"] {
@@ -33,8 +33,8 @@ input[type="submit"]{
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
     border-radius: 2px;
-    color: #757575;
-    cursor: default;
+    color: #444;
+    cursor: pointer;
     font-family: arial,sans-serif;
     font-size: 13px;
     font-weight: bold;
