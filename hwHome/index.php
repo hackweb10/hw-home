@@ -8,6 +8,7 @@ body{
     text-align: center;
     color: #444;
     font-size: 16px;
+    font-family: arial,sans-serif;
 }
 input[type="text"] {
     width: calc(100% - 30px);
@@ -64,7 +65,7 @@ h1{
 
 <h1><strong><span class="primary">h</span><span class="secondary">w</span><span class="">Home</span></strong></h1>
 <p>
-    Turner on.
+    Controller
     <br>    
     <form method="post" action="<?php echo htmlspecialchars('/hwHome/');?>">
         <label for="name">Name</label>        
