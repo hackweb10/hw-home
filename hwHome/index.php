@@ -50,11 +50,14 @@ h1{
 .primary{
     color: #4885ed;
 }
+.secondary{
+    color: #212529;
+}
 </style>
 </head>
 <body>
 
-<h1><strong><span class="primary">h</span>w<span class="primary">Home</span></strong></h1>
+<h1><strong><span class="primary">h</span><span class="secondary">w</span><span class="">Home</span></strong></h1>
 <p>
     Turner on.
     <br>    
