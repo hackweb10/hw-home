@@ -42,6 +42,7 @@ input[type="submit"]{
     min-width: 54px;
     padding: 8px 16px;
     text-align: center;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
 }
 </style>
 </head>
