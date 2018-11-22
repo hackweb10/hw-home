@@ -10,7 +10,7 @@ body{
     font-size: 16px;
 }
 input[type="text"] {
-    width: calc(100%);
+    width: calc(100% - 30px);
     background-color: transparent;
     /* -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
