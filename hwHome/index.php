@@ -12,7 +12,7 @@ input[type="text"] {
     background-color: transparent;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     border: none;
-    margin: 0 auto;
+    margin: 15px auto;
     padding: 10px 8px;
     color: rgba(0,0,0,.87);
     word-wrap: break-word;
@@ -32,10 +32,8 @@ input[type="text"] {
     Turner on.
     <br>    
     <form method="post" action="<?php echo htmlspecialchars('/hwHome/');?>">
-        <label for="name">Name</label>
-        <br>
-        <input type="text" id="name" name="c" value="">
-        <br><br>
+        <label for="name">Name</label>        
+        <input type="text" id="name" name="c" value="">        
         <input type="submit" name="submit" value="send"> 
     </form>
     <br>
