@@ -9,7 +9,7 @@ body{
     color: #444;
     font-size: 16px;
     font-family: arial,sans-serif;
-    background-color: #e9ecef;
+    background-color: #fff;
 }
 input[type="text"] {
     width: calc(100% - 30px);
