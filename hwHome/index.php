@@ -6,7 +6,7 @@
 <style>
 body{
     text-align: center;
-    color: #757575;
+    color: #555;
     font-size: 16px;
 }
 input[type="text"] {
@@ -40,7 +40,7 @@ input[type="submit"]{
     font-weight: bold;
     margin: 11px 4px;
     min-width: 54px;
-    padding: 0 16px;
+    padding: 8px 16px;
     text-align: center;
 }
 </style>
