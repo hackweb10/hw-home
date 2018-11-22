@@ -6,6 +6,8 @@
 <style>
 body{
     text-align: center;
+    color: #757575;
+    font-size: 16px;
 }
 input[type="text"] {
     width: 100%;
@@ -23,11 +25,29 @@ input[type="text"] {
     -webkit-tap-highlight-color: transparent;   
     max-width: 484px; 
 }
+input[type="submit"]{
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    -webkit-border-radius: 2px;
+    -webkit-user-select: none;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+}
 </style>
 </head>
 <body>
 
-<h1><strong># hwHome #</strong></h1>
+<h1><strong>hwHome</strong></h1>
 <p>
     Turner on.
     <br>    
