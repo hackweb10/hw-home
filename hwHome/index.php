@@ -98,11 +98,27 @@ a{
             $timeout = 10;
             $socket = @fsockopen( '192.168.1.109', 80, $errno, $errstr, $timeout );
             $online = ( $socket !== false );
-            if($online) echo '<span>005 is online</span>';
+            if($online) echo '<span>005 is online</span> ';
             else echo '<span>005 is offline</span>';
         ?>
     </div>
 </p>
+
+<script>
+// var btn = document.getElementById('turnoff');
+ 
+// var request = new XMLHttpRequest();
+ 
+// request.onreadystatechange = function() {
+  
+// }
+ 
+// request.open('Get', 'http://192.168.0.');
+ 
+// btn.addEventListener('click', function() {  
+//   request.send();
+// });
+</script>
 
 </body>
 </html>
