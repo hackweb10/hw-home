@@ -2,5 +2,6 @@
 //header("HTTP/1.1 301 Moved Permanently"); 
 // header("Location: /hwHome"); 
 // exit();
-require_once(__DIR__.'/hwHome/index.php');
+// require_once(__DIR__.'/hwHome/index.php');
+phpinfo();
 ?>
