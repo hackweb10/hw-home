@@ -140,7 +140,7 @@ $(function(){
     // hibernate
     $('body').on('click', '#hibernate', function(){
         $.get( "./hwHome/hibernate.php", function(data) {
-            $('#status').html(data);
+            $('#status').html('Done.');
         });
     });
 
