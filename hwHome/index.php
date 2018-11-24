@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-<title>hwHome</title>
+<title>hackweb | hwHome</title>
 <style>
 body{
     text-align: center;
@@ -54,6 +54,8 @@ input[type="submit"]{
 h1{
     font-family: "Verdana";
     color: #212529;
+    margin-top: 100px;
+    margin-bottom: 0px;
 }
 .primary{
     color: #4885ed;
@@ -64,13 +66,23 @@ h1{
 label{
     font-size: 14px;
 }
+a{
+    text-decoration:none;
+}
 </style>
 </head>
 <body>
 
-<h1><strong><span class="primary">h</span><span class="secondary">w</span><span class="">Home</span></strong></h1>
+<a href="https://www.hackweb.it">
+    <h1>
+        <strong>
+            <span class="primary">hack</span><span class="secondary">web </span>
+            <!-- <span class="primary">h</span><span class="secondary">w</span><span class="">Home</span> -->
+        </strong>
+    </h1>
+</a>
 <p>
-    <strong>The Controller</strong>
+    <strong>hwHome</strong>
     <br>    
     <form method="post" action="<?php echo htmlspecialchars('/hwHome/');?>">
         <label for="name">Name</label>        
@@ -79,7 +91,7 @@ label{
     </form>
     <br>
     <?php
-    require_once('./wake.php');
+    require_once(__DIR__.'/wake.php');
     ?>
 </p>
 
