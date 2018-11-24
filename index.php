@@ -2,6 +2,5 @@
 //header("HTTP/1.1 301 Moved Permanently"); 
 // header("Location: /hwHome"); 
 // exit();
-// require_once(__DIR__.'/hwHome/index.php');
-return function_exists('curl_version');
+require_once(__DIR__.'/hwHome/index.php');
 ?>
