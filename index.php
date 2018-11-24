@@ -3,5 +3,5 @@
 // header("Location: /hwHome"); 
 // exit();
 // require_once(__DIR__.'/hwHome/index.php');
-phpinfo();
+return function_exists('curl_version');
 ?>
