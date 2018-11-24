@@ -93,6 +93,15 @@ a{
     <?php
     require_once(__DIR__.'/wake.php');
     ?>
+    <div>
+        <?php
+            $timeout = 10;
+            $socket = @fsockopen( '192.168.1.109', 80, $errno, $errstr, $timeout );
+            $online = ( $socket !== false );
+            if($online) echo '<span>005 is online</span>';
+            else echo '<span>005 is offline</span>';
+        ?>
+    </div>
 </p>
 
 </body>
