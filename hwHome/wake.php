@@ -12,20 +12,15 @@ switch(@$_POST['c']){
     break;
     default:
     if(isset($_POST['c'])) echo @$_POST['c'].' not found.'
-    ?>
-    <script>
-    window.setTimeout(function(){
-        //window.location.href = '/';
-    }, 2000);
-    </script>
+    ?>    
     <?php
     break;
 }
 if(isset($_POST['c'])):
 ?>
 <script>
-window.setTimeout(function(){
-    window.location.href = '/';
-}, 2000);
+// window.setTimeout(function(){
+//     window.location.href = './';
+// }, 2000);
 </script>
 <?php endif; ?>

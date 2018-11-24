@@ -50,6 +50,7 @@ input[type="submit"]{
     -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    outline: none !important;
 }
 h1{
     font-family: "Verdana";
@@ -69,7 +70,29 @@ label{
 a{
     text-decoration:none;
 }
+.btn{
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    -webkit-border-radius: 2px;
+    -webkit-user-select: none;
+    background-color: transparent;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #444;
+    cursor: pointer;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;    
+    text-align: center;    
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    outline: none !important;
+}
 </style>
+<script src="./hwHome/jquery.js"></script>
 </head>
 <body>
 
@@ -87,37 +110,48 @@ a{
     <form method="post" action="<?php echo htmlspecialchars('/hwHome/');?>">
         <label for="name">Name</label>        
         <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="text" id="name" name="c" value="<?php echo @$_GET['s']; ?>">        
-        <input type="submit" name="submit" value="Send"> 
+        <input type="submit" name="submit" id="turnon" value="Send"> 
     </form>
     <br>
-    <?php
-    require_once(__DIR__.'/wake.php');
-    ?>
-    <div>
+    <!-- <div>
         <?php
-            $timeout = 10;
-            $socket = @fsockopen( '192.168.1.109', 80, $errno, $errstr, $timeout );
-            $online = ( $socket !== false );
-            if($online) echo '<span>005 is online</span> ';
-            else echo '<span>005 is offline</span>';
+        //require_once(__DIR__.'/wake.php');
         ?>
-    </div>
+    </div> -->
+    <div id="ping"></div>
+    <br>
+    <div id="status"></div>
 </p>
 
 <script>
-// var btn = document.getElementById('turnoff');
- 
-// var request = new XMLHttpRequest();
- 
-// request.onreadystatechange = function() {
-  
-// }
- 
-// request.open('Get', 'http://192.168.0.');
- 
-// btn.addEventListener('click', function() {  
-//   request.send();
-// });
+function ping(){
+    $.get( "./hwHome/ping.php", function(data) {
+        $('#ping').html(data);
+    });
+}
+
+$(function(){
+    // ping
+    ping();
+    window.setInterval(function(){
+        ping();        
+    }, 10000);    
+
+    // hibernate
+    $('body').on('click', '#hibernate', function(){
+        $.get( "./hwHome/hibernate.php", function(data) {
+            $('#status').html(data);
+        });
+    });
+
+    // turn on
+    $('#turnon').click(function(e){
+        e.preventDefault();
+        $.post( "./hwHome/wake.php?c=002", { c: $('#name').val() }, function(data) {
+            $('#status').html(data);
+        });
+    });
+});
 </script>
 
 </body>
