@@ -86,7 +86,7 @@ a{
     <br>    
     <form method="post" action="<?php echo htmlspecialchars('/hwHome/');?>">
         <label for="name">Name</label>        
-        <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="text" id="name" name="c" value="">        
+        <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="text" id="name" name="c" value="<?php echo @$_GET['s']; ?>">        
         <input type="submit" name="submit" value="Send"> 
     </form>
     <br>
