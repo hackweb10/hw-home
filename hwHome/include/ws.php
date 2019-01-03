@@ -10,7 +10,7 @@
 </div>
 
 <script>
-var ws = new WebSocket("wss://home.hackweb.it:8765/"),
+var ws = new WebSocket("ws://home.hackweb.it:8765/"),
 messages = document.createElement('div');
 messages.setAttribute("id", "ws-list");
 ws.onmessage = function(event) {
