@@ -105,7 +105,7 @@ a{
 }
 #ws-list{
 	overflow-y: scroll;
-	height: 280px;
+	height: 200px;
 	padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
 	box-sizing: content-box; /* So the width will be 100% + 17px */
   width: 100%;
