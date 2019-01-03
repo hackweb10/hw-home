@@ -96,12 +96,16 @@ a{
 
 .hw-py{
 	margin-top: 20px;
-	max-width: 600px;
+  max-width: 600px;
+  max-height: calc(100vh - 96px);
+  height: calc(100vh - 96px);
+  margin-bottom: 20px;
+  position: relative;
 }
 .hw-ws{
-	height: 100%;
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  /* height: calc(100% - 28px); */
+  overflow: hidden;
 }
 #ws-list{
 	overflow-y: scroll;
