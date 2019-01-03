@@ -97,8 +97,6 @@ a{
 .hw-py{
 	margin-top: 20px;
   max-width: 600px;
-  max-height: calc(100vh - 96px);
-  height: calc(100vh - 96px);
   margin-bottom: 20px;
   position: relative;
 }
@@ -109,7 +107,7 @@ a{
 }
 #ws-list{
 	overflow-y: scroll;
-	height: 200px;
+	height: 74px;
 	padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
 	box-sizing: content-box; /* So the width will be 100% + 17px */
   width: 100%;
