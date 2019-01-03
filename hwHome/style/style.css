@@ -107,7 +107,7 @@ a{
 }
 #ws-list{
 	overflow-y: scroll;
-	height: 74px;
+	height: 134px;
 	padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
 	box-sizing: content-box; /* So the width will be 100% + 17px */
   width: 100%;
@@ -119,7 +119,7 @@ a{
 }
 .ws-me{
   color: #4885ed;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 .ws-serv{
   /* margin-bottom: 10px; */

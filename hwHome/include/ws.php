@@ -20,7 +20,7 @@ ws.onmessage = function(event) {
   messages.classList.add('ws-line');
   message.classList.add('ws-serv');
 
-  var isBottom = (messages.scrollTop >= messages.scrollHeight-90) ? true : false;
+  var isBottom = (messages.scrollTop >= messages.scrollHeight-150) ? true : false;
   message.appendChild(content);
   messages.appendChild(message);
   if(isBottom) messages.scrollTop = messages.scrollHeight;
