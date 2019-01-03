@@ -117,6 +117,13 @@ a{
 .ws-line{
 	margin-bottom: 10px;
 }
+.ws-me{
+  color: #4885ed;
+  margin-top: 10px;
+}
+.ws-serv{
+  /* margin-bottom: 10px; */
+}
 .ws-message{
 	margin-top: 10px;
 	width: 100%;

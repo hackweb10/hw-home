@@ -16,8 +16,9 @@ messages.setAttribute("id", "ws-list");
 ws.onmessage = function(event) {
   var messages = document.getElementById('ws-list'),
   message = document.createElement('div'),
-  content = document.createTextNode(event.data);
+  content = document.createTextNode('' + event.data);
   messages.classList.add('ws-line');
+  message.classList.add('ws-serv');
 
   var isBottom = (messages.scrollTop >= messages.scrollHeight-90) ? true : false;
   message.appendChild(content);
@@ -28,14 +29,17 @@ document.getElementsByClassName('hw-ws')[0].appendChild(messages);
 
 $('body').on('keyup', '#ws-message', function (e) {
   if (e.keyCode == 13) {
+    var command = $(this).val();
     var messages = document.getElementById('ws-list'),
     message = document.createElement('div'),
     content = document.createTextNode('$ '+$(this).val());
+    message.classList.add('ws-me');
     messages.classList.add('ws-line');
     var isBottom = true;
     message.appendChild(content);
     messages.appendChild(message);
     if(isBottom) messages.scrollTop = messages.scrollHeight;
+    ws.send(command);
     $(this).val('');
   }
 });
